@@ -1,0 +1,6 @@
+Script to search/replace WP content from wp_posts, using wp-config params.
+
+Exercise to learn and play with
+- sequel gem
+- user input
+- file manipulation
