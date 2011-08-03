@@ -3,12 +3,7 @@ require 'sequel'
 
 VERBOSE = false
 
-#WP_CONFIG = '/Users/nhughes/workspace/rockcompanies/wordpress/wp-config.php'
-WP_CONFIG = ARGV.shift
-if WP_CONFIG.nil?
-	puts "Usage: ruby update_wp_url.rb /path/to/wp-config.php"
-	exit
-end
+WP_CONFIG = ARGV.shift or abort "Usage: ruby update_wp_url.rb /path/to/wp-config.php"
 
 puts "WP_CONFIG: '#{WP_CONFIG}'" if VERBOSE
 
